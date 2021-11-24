@@ -70,6 +70,10 @@ class UserInfo {
     return uid;
   }
 
+  String getMobile() {
+    return mobile!;
+  }
+
   bool get isMan => gender == 1;
 
   bool get isWoman => gender == 2;
