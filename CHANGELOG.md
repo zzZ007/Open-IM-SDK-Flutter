@@ -1,6 +1,29 @@
+## 1.0.9
+
+1.Upgrade sdk to 1.4.5.
+
+## 1.0.8
+
+1.Upgrade sdk to 1.4.4. </br>
+2.New and changed conversation return changed data and no longer return all data. </br>
+3.New conversation paging method.
+
+## 1.0.7
+
+Upgrade sdk to 1.3.4 </br>
+New add method setConversationRecvMessageOpt and getConversationRecvMessageOpt
+
+## 1.0.6
+
+Upgrade sdk to 1.2.9
+
+## 1.0.5
+
+Upgrade sdk to 1.2.8
+
 ## 1.0.4
 
-New add clear c2c message and group message </bar>
+New add clear c2c message and group message </br>
 Update sdk to 1.1.9
 
 ## 1.0.3

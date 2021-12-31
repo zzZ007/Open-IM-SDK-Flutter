@@ -74,7 +74,7 @@ class Message {
     createTime = json['createTime'];
     sendTime = json['sendTime'];
     sendID = json['sendID'];
-    recvID = json['RecvID'];
+    recvID = json['recvID'];
     msgFrom = json['msgFrom'];
     contentType = json['contentType'];
     platformID = json['platformID'];
@@ -125,7 +125,7 @@ class Message {
     data['createTime'] = this.createTime;
     data['sendTime'] = this.sendTime;
     data['sendID'] = this.sendID;
-    data['RecvID'] = this.recvID;
+    data['recvID'] = this.recvID;
     data['msgFrom'] = this.msgFrom;
     data['contentType'] = this.contentType;
     data['platformID'] = this.platformID;
@@ -153,17 +153,14 @@ class Message {
   }
 
   @override
-  bool operator ==(Object other) {
-    if (other is Message) {
-      return other._id == _id;
-    }
-    return false;
-  }
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is Message &&
+          runtimeType == other.runtimeType &&
+          clientMsgID == other.clientMsgID;
 
   @override
-  int get hashCode => super.hashCode;
-
-  String? get _id => clientMsgID;
+  int get hashCode => clientMsgID.hashCode;
 }
 
 class PictureElem {
